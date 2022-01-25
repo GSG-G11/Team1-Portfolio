@@ -85,3 +85,64 @@ header::before{
   line-height: 2;
   font-size:18px;
 }
+.our-works{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;   
+}
+.works-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    
+}
+.img-container{
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.our-works h2{
+    height: 10%;
+    text-decoration: underline;
+    text-decoration-color: #343CFF;
+}
+.img-container h3{
+    padding-top: 4px;
+    height: 12%;
+    width: 100%;
+    background-color: #343CFF;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+.img-container h3:first-child{
+    top:0;
+
+}
+@keyframes animate {
+    25% {
+        transform: scale(1.4);
+        
+    }
+    100%{
+        transform: scale(1.7) rotate(10deg);
+        
+    }
+}
+
+.img-container img:hover{
+    cursor: pointer;
+    /* transition-duration: .5s; */
+    animation: animate 1.5s ease-in-out forwards;
+}

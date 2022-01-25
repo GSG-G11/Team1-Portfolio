@@ -17,6 +17,9 @@
 
 # **Description** <span id='desc'></span>
 
+A responsive single-page portfolio website with a short description about who are we ?! and our experiences
+and displaying our services and the team members' names with a brief about the experience for each member and displaying some previous works.
+
 # **design** <span id='design'></span>
 
 ### [Figma Link](https://www.figma.com/file/PT0pqJOp7eTmUvUIJLlDat/Team-1?node-id=0%3A1)

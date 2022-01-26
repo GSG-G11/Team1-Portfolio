@@ -318,6 +318,22 @@ nav .test {
   .cards .card img {
     margin: 50px;
   }
+  .contact-us-container{
+    margin-top:24px;
+    height: 32vh;
+  }
+  .contact-us{
+    width: 90%;
+  }
+  .contact-us .get-in-touch{
+    width: 40%;
+  }
+  .contact-us .contact-us-form{
+    width: 60%;
+  }
+  .contact-us .contact-us-form input{
+    height: 40px;
+  }
 }
 
 @media (max-width: 600px) {

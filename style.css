@@ -211,8 +211,16 @@ header::before{
   cursor: pointer;
 }
 .get-in-touch{
-  padding-top: 3%;
+  padding-top: 2%;
+  text-align: center;
+}
+.get-in-touch p{
   font-size: 22px;
   font-weight: 800;
-  text-align: center;
+}
+.get-in-touch img{
+  background-color:#343CFF;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 10px;
 }

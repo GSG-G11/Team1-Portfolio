@@ -6,6 +6,7 @@
 }
 :root {
   --main-color: #343cff;
+  --sec-color:#23272A;
 }
 nav {
   height: 5rem;
@@ -50,23 +51,21 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-header{
+header {
   background-image: url(assets/banner.jpg);
   height: 100vh;
   background-size: cover;
   position: relative;
   z-index: -1;
-  
-
 }
-header::before{
+header::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   background-color: #000000ba;
-
 }
 .text {
   position: absolute;
@@ -83,66 +82,103 @@ header::before{
 
 .text p {
   line-height: 2;
-  font-size:18px;
+  font-size: 18px;
 }
-.our-works{
-    margin-top: 20px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    align-items: center;   
+.our-works {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  align-items: center;
 }
-.works-container{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    
+.works-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
 }
-.img-container{
-    width:50%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+.img-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.our-works h2{
-    height: 10%;
-    text-decoration: underline;
-    text-decoration-color: #343CFF;
+.our-works h2 {
+  height: 10%;
+  text-decoration: underline;
+  text-decoration-color: #343cff;
 }
-.img-container h3{
-    padding-top: 4px;
-    height: 12%;
-    width: 100%;
-    background-color: #343CFF;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
+.img-container h3 {
+  padding-top: 4px;
+  height: 12%;
+  width: 100%;
+  background-color: #343cff;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
 }
-.img-container h3:first-child{
-    top:0;
-
+.img-container h3:first-child {
+  top: 0;
 }
 @keyframes animate {
-    25% {
-        transform: scale(1.4);
-        
-    }
-    100%{
-        transform: scale(1.7) rotate(10deg);
-        
-    }
+  25% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.7) rotate(10deg);
+  }
 }
 
-.img-container img:hover{
-    cursor: pointer;
-    /* transition-duration: .5s; */
-    animation: animate 1.5s ease-in-out forwards;
+.img-container img:hover {
+  cursor: pointer;
+  /* transition-duration: .5s; */
+  animation: animate 1.5s ease-in-out forwards;
+}
+.team {
+  margin-top: 100px;
+  background-color: var(--sec-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.team h1 {
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  border-bottom: 2px solid var(--main-color);
+  width: fit-content;
+}
+.cards {
+  display: flex;
+}
+.card {
+  background-color: #1a1a1a;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  margin-bottom: 20px;
+}
+.card .text-card {
+  text-align: center;
+}
+.card .text-card h2 {
+  margin-bottom: 20px;
 }

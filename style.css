@@ -115,7 +115,7 @@ header::before {
   text-decoration-color: #343cff;
 }
 .img-container h3 {
-  padding-top: 4px;
+  padding: 6px 0 0 12px;
   height: 12%;
   width: 100%;
   background-color: #343cff;
@@ -271,60 +271,67 @@ nav .test {
   display: none;
 }
 
-@media(max-width:1000px){
-  nav{
+@media (max-width: 1000px) {
+  nav {
     width: 100%;
-
   }
   nav ul {
     width: 20rem;
-   
-
-
   }
   nav ul li a {
     font-size: 14px;
-    margin: 0 5px ;
+    margin: 0 5px;
   }
-  .team{
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+  }
+  .works-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+  }
+  .img-container {
+    height: 50%;
+    width: 75%;
+    border-bottom: 1px solid #343cff;
+  }
+  .team {
     width: 100%;
     height: fit-content;
   }
-  .team .cards{ 
-    
-     flex-wrap: wrap; 
-     align-items: center;
-     justify-content: center;
-    
+  .team .cards {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
-  .team .cards .card{
-   width: 40%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .team .cards .card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .cards .card img {
     margin: 50px;
   }
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
   nav {
     width: 100%;
   }
-  nav .test{
-   
+  nav .test {
     display: block;
     color: white;
     margin: auto -34px;
     font-size: 30px;
-     
-  
   }
-  
 
-
-   nav i:hover + ul {
+  nav i:hover + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -334,8 +341,8 @@ nav .test {
     background-color: rgb(0 0 0 / 50%);
     z-index: 2;
   }
-   nav i:hover + ul a{
-    padding: 15px ;
+  nav i:hover + ul a {
+    padding: 15px;
   }
 
   nav ul {
@@ -351,44 +358,41 @@ nav .test {
     transition: 0.3s;
     position: relative;
     z-index: 2;
-
   }
- 
-  header{
+
+  header {
     width: 100%;
     justify-content: center;
-
-
   }
   header .text {
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 250px;
     text-align: center;
     margin: 80px 0;
-  } 
+  }
   header .text h1 {
     font-size: 20px;
     margin: 20px auto;
-
   }
-  header .text p{
+  header .text p {
     font-size: 16px;
   }
-  .team{
+
+  .img-container {
+    width: 85%;
+  }
+
+  .team {
     height: fit-content;
     width: 100%;
   }
   .team .cards {
-
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-
-
   }
-  .cards .card{
+  .cards .card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -397,5 +401,4 @@ nav .test {
   .cards .card img {
     margin: 30px;
   }
-
 }

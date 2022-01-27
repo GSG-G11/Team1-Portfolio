@@ -12,11 +12,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Portoflio</title>
   </head>
   <body>
@@ -117,19 +117,35 @@
         </div>
         <div class="contact-us-form contact-us-child">
           <h3>Message Us</h3>
-          <form action="#">
-            <input class="input-1" type="text" placeholder="Name" /><input
+          <form action="#" method="post">
+            <input
+              class="input-1"
+              type="text"
+              placeholder="Name"
+              name="name"
+            /><input
               class="input-1"
               type="email"
+              name="email"
               placeholder="Email"
             /><br />
-            <input type="text" placeholder="Subject title" /><br />
+            <input
+              type="text"
+              placeholder="Subject title"
+              name="subject-title"
+            /><br />
             <input
               class="subject-input"
               type="text"
               placeholder="subject"
+              name="details"
             /><br /><br />
-            <input id="send-input" class="send-input" type="submit" value="Send message" />
+            <input
+              id="send-input"
+              class="send-input"
+              type="submit"
+              value="Send message"
+            />
           </form>
         </div>
       </div>
@@ -138,7 +154,9 @@
     <!-- the start of the footer section -->
     <footer class="footer">
       <h4>Created By Our Team | 2022 All rights reserved</h4>
-      <div class="footer-img-container"><img src="assets/fLogo.png"  alt='logo'/></div>
+      <div class="footer-img-container">
+        <img src="assets/fLogo.png" alt="logo" />
+      </div>
       <ul>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#our-works">Our works</a></li>
